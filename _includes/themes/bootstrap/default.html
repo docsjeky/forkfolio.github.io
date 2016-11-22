@@ -62,18 +62,41 @@
   </head>
   <body>
       {{ content }}
-      <hr>
-      <section class="relateds">
+      <footer class="k-footer k-spacing-bottom--xxx-large">
+        <div class="k-footer-social">
+          <div class="container">
+            <h3 class="k-footer-social-accounts-header">Join us on</h3>
+            <ul class="k-footer-social-accounts">
+              <li class="k-footer-social-account">
+                <a class="k-footer-social-account-link k-color--twitter" href="https://www.twitter.com/yourkarma" target="_blank">
+                  <div class="k-icon--twitter"></div>
+                </a>
+              </li>
+              <li class="k-footer-social-account">
+                <a class="k-footer-social-account-link k-color--facebook" href="https://www.facebook.com/getyourkarma" target="_blank">
+                  <div class="k-icon--facebook-small"></div>
+                </a>
+              </li>
+              <li class="k-footer-social-account">
+                <a class="k-footer-social-account-link k-color--instagram" href="https://www.instagram.com/karmawifi" target="_blank">
+                  <div class="k-icon--instagram"></div>
+                </a>
+              </li>
+              <li class="k-footer-social-account">
+                <a class="k-footer-social-account-link k-color--youtube" href="https://www.youtube.com/user/karmawifi" target="_blank">
+                  <div class="k-icon--youtube"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="k-footer-copyright">
+          <div class="container">
+            <p class="k-paragraph--small k-spacing-bottom--none k-align--center k-color--gray-inactive">&copy; Karma Mobility, Inc.</p>
+          </div>
+        </div>
+      </footer>
 
-        <p>
-          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          <span class="text-muted">
-            powered by
-            <a href="https://lantoniotrento.github.io" target="_blank" title="Trendo Web is a responsive theme build by Antonio Trento in jekyll3">Antonio Trento</a>
-          </span>
-        </p>
-				<div><a href="{{ BASE_PATH }}/landing"><h3>Other samples</h3></a></div>
-			</section>
     {% include JB/analytics %}
     {% if site.JB.comments.disqus.short_name == true %}
     <script id="dsq-count-scr" src="//{{ site.JB.comments.disqus.short_name }}.disqus.com/count.js" async></script>
