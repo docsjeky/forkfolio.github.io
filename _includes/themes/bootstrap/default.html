@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="8teUNqSYlW3neni2wEvyCK8HcNSVcm1GByRiqt+FHUbK2s5zZ8QN+vGu05ERsF+o55vNGu7Wyn6mSFttQNgSFg==" />
+    <meta property="og:title" content="Karma | Take WiFi with you on the go." />
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="description" content="Karma Go gets you online anywhere you are, with data options that you can feel good about. With nationwide coverage on LTE, stay connected to the internet with all of your devices, seamlessly." />
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/assets/css/bootstrap/component.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/assets/css/bootstrap/carousel.css" />
+    <script src="https://dy53q6sor7j4i.cloudfront.net/assets/website-de458710b3fe4c1c2c1644479e560e0318a78bad26365db6e7f4f95dc49d7e94.js"></script>
+    <meta name="msapplication-TileColor" content="#f9461c" />
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--[if IE]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <!-- Google ADS mobile block -->
+    {% if site.google_ad_client %}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "{{ site.google_ad_client }}",
+        enable_page_level_ads: true
+        });
+    </script>
+    {% endif %}
+
+
+  <!--  <meta property="og:description" content="Karma Go gets you online anywhere you are, with data options that you can feel good about. With nationwide coverage on LTE, stay connected to the internet with all of your devices, seamlessly." />
+    <meta name="keywords" content="karma,karma go,go,karma wifi,karma hotspot,portable wifi,pay as you go wifi,no contract wifi,mobile wifi,social wifi,yourkarma" />
+    <meta property="og:image" content="https://dy53q6sor7j4i.cloudfront.net/images/karmeleon2/opengraph.jpg" />
+    <meta property="og:site_name" content="Karma" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="359034750804645" />
+    <link rel="canonical" href="https://yourkarma.com/" />
+    <meta property="og:url" content="https://yourkarma.com/" />
+    <link rel="alternate" type="application/atom+xml" title="Karma Blog" href="http://blog.yourkarma.com/rss/" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://yourkarma.com/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="https://yourkarma.com/apple-touch-icon-precomposed.png" />
+    <meta name="msapplication-TileImage" content="https://yourkarma.com/windows-tile-image.png" /> -->
+
+
+    <!--[if lt IE 9]><script src="https://dy53q6sor7j4i.cloudfront.net/assets/html5shiv/dist/html5shiv-d3d35aa8c5c7074d41080b04f1324ad142a05add2f6e1e2ac7028b1eb3bece66.js"></script><![endif]-->
+    <script src="https://dy53q6sor7j4i.cloudfront.net/assets/promise_polyfill-88fd5999d256894c498d827d3ac093ee15eb3edf1cf4d52a676cb08a38a4dc8e.js"></script>
+    <!--[if lt IE 9]>
+          <script src="https://dy53q6sor7j4i.cloudfront.net/assets/es5-shim.min-1785235b13c15856e7ed74d729b1a803d01157ac45507931a32d1789d827b518.js"></script>
+          <script src="https://dy53q6sor7j4i.cloudfront.net/assets/es5-sham.min-ea8123e86dc6d3463194080720478e6dc813c168041f11fd292c6cea2cbbe60c.js"></script>
+        <![endif]-->
+
+  </head>
+  <body>
+      {{ content }}
+      <hr>
+      <section class="relateds">
+
+        <p>
+          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+          <span class="text-muted">
+            powered by
+            <a href="https://lantoniotrento.github.io" target="_blank" title="Trendo Web is a responsive theme build by Antonio Trento in jekyll3">Antonio Trento</a>
+          </span>
+        </p>
+				<div><a href="{{ BASE_PATH }}/landing"><h3>Other samples</h3></a></div>
+			</section>
+    {% include JB/analytics %}
+    {% if site.JB.comments.disqus.short_name == true %}
+    <script id="dsq-count-scr" src="//{{ site.JB.comments.disqus.short_name }}.disqus.com/count.js" async></script>
+    {% endif %}
+    <script src="{{ BASE_PATH }}/assets/js/jquery/jquery-2.2.0.min.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/custom/npm.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/custom/custom.js"></script>
+  </body>
+</html>
