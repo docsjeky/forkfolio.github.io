@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="8teUNqSYlW3neni2wEvyCK8HcNSVcm1GByRiqt+FHUbK2s5zZ8QN+vGu05ERsF+o55vNGu7Wyn6mSFttQNgSFg==" />
-    <meta property="og:title" content="Karma | Take WiFi with you on the go." />
+    <meta property="og:title" content="{{ page.title }} | {% if page.description %}{{ page.description }}{% endif %}" />
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
@@ -91,8 +91,8 @@
     <script src="{{ BASE_PATH }}/assets/js/form.js"></script>
     <script src="https://dy53q6sor7j4i.cloudfront.net/assets/website-de458710b3fe4c1c2c1644479e560e0318a78bad26365db6e7f4f95dc49d7e94.js"></script>
     <script src="{{ BASE_PATH }}/assets/js/jquery/jquery-2.2.0.min.js"></script>
-    <script src="{{ BASE_PATH }}/assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- <script src="{{ BASE_PATH }}/assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="{{ BASE_PATH }}/assets/js/custom/npm.js"></script>
-    <script src="{{ BASE_PATH }}/assets/js/custom/custom.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/custom/custom.js"></script> -->
   </body>
 </html>
