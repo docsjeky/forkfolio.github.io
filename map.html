@@ -1,0 +1,58 @@
+---
+layout: page
+title: Map
+header: Map Page
+tagline: "All the elemets to improve the sites with this theme"
+group: navigation
+img : 4.jpg
+img-mobile : 4-mobile.jpg
+---
+{% include JB/setup %}
+{% include themes/bootstrap/nav-bar.html %}
+<main class="k-main">
+        <section class="section-coverage" id="coverage">
+            <div class="container">
+                <div class="row coverage-lookup-result">
+                    <div class="col-md-4 c-location-search-container coverage-lookup-result">
+                        <div class="c-location-search-form location">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-6 col-xs-12">
+                                    <form class="k-form coverage-zip-lookup k-spacing-bottom--xx-large" data-coverage-type="overview" role="form">
+                                        <fieldset class="k-form-fieldset k-spacing-bottom--base">
+                                            <legend class="k-form-legend">Check your coverage</legend>
+                                            <div class="row k-form-row">
+                                                <div class="col-xs-12 k-form-column">
+                                                    <div class="k-form-group">
+                                                        <input class="form-control k-form-search-field" placeholder="Your City or ZIP code" type="text">
+                                                        <label class="k-form-label">Location </label>
+                                                        <button class="k-form-search-field-button" id="search-coverage"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="c-legend"><span class="c-legend-excellent"></span><span class="c-legend-text">Excellent</span></div>
+                                                <div class="c-legend"><span class="c-legend-good"></span><span class="c-legend-text">Good</span></div>
+                                                <div class="c-legend"><span class="c-legend-none"></span><span class="c-legend-text">None Yet</span></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-12 col-sm-6 col-xs-12">
+                                    <h4 class="k-header k-color--night name">Loading…</h4>
+                                    <p class="k-paragraph coverage"></p>
+                                    <div class="k-mobile-edges"><a class="k-button k-button--orange k-button--full-width k-button--mobile-full-width btn-store" href="https://yourkarma.com/store">Buy Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 c-coverage-map-column">
+                        <div class="c-coverage-map-container section-coverage-maps-wrapper">
+                            <div class="coverage-map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
